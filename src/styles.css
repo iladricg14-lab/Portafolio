@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --blue-dark: #203864;
+  --blue-medium: #5c7fb8;
+  --pink: #e86fa3;
+  --pink-light: #f8c8dc;
+  --white-glass: rgba(255, 255, 255, 0.82);
+  --text: #26344d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f7ff;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+}
+
+.landing {
+  width: calc(100% - 24px);
+  min-height: calc(100vh - 24px);
+  margin: 12px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+
+  background-image: url("./assets/img/Adriana.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* capa suave para que el texto se lea */
+.landing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.72) 0%,
+    rgba(255,255,255,0.55) 35%,
+    rgba(255,255,255,0.18) 60%,
+    rgba(255,255,255,0) 100%
+  );
+  z-index: 1;
+}
+
+/* animacion*/ 
+
+.sakura {
+  position: absolute;
+  top: -20px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+/*Navbar*/ 
+
+.navbar {
+  width: 90%;
+  margin: 25px auto 0;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.10);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.08);
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+  color: var(--blue-dark);
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 34px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0f2444;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.nav-links a.active {
+  border-bottom: 3px solid var(--pink);
+}
+
+.nav-links a:hover {
+  color: var(--pink);
+}
+
+/*Hero*/
+
+@keyframes floatHero {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.landing {
+  animation: floatHero 8s ease-in-out infinite;
+}
+
+.hero-image {
+  animation: fadeInRight 1.2s ease;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Texto principal */
+
+.landing {
+    min-height: 120vh;
+}
+.landing-content {
+  position: relative;
+  z-index: 5;
+  margin-left: 70px;
+  margin-top: 160px;
+  max-width: 470px;
+}
+
+.hello {
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+  color: var(--blue-dark);
+  font-weight: 600;
+}
+
+.landing-content h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 4.8rem;
+  line-height: 0.95;
+  color: var(--blue-dark);
+  margin: 8px 0 12px;
+}
+
+.landing-content h2 {
+  color: var(--pink);
+  font-size: 1.75rem;
+  margin-bottom: 18px;
+}
+
+.description {
+  max-width: 380px;
+  line-height: 1.7;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.btn-primary,
+.btn-secondary {
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all .3s ease;
+}
+
+.btn-primary {
+  background: var(--pink);
+  color: white;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--pink);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 8px 20px rgba(232,111,163,.35);
+}
+
+/* TARJETA CONTACTO */
+
+.contact-card {
+    width: 90%;
+    min-height: 110px;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    z-index: 5;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 28px 35px;
+
+    /* Efecto cristal */
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 22px;
+    box-shadow:
+        0 8px 32px rgba(31, 38, 135, 0.10);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-right: 1px solid rgba(92, 127, 184, 0.22);
+   position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.35s ease;
+}
+
+.contact-item:last-child {
+  border-right: none;
+}
+
+/*.contact-item span {
+  color: var(--pink);
+  font-weight: 700;
+  font-size: 1.1rem;
+}*/
+
+.contact-item span {
+    color: #e86fa3;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover span {
+    transform: scale(1.25);
+    color: #ff5c9a;
+}
+
+.contact-item h3 {
+  font-size: 0.9rem;
+  color: var(--blue-dark);
+  margin-bottom: 4px;
+   transition: all 0.35s ease;
+}
+.contact-item:hover h3 {
+    color: #e86fa3;
+}
+
+.contact-item p {
+  font-size: 0.75rem;
+  color: #526174;
+}
+
+.contact-item:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 10px 25px rgba(232,111,163,0.15);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+.contact-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(248,200,220,0.15),
+        rgba(255,255,255,0)
+    );
+    opacity: 0;
+    transition: 0.35s;
+}
+
+.contact-item:hover::before {
+    opacity: 1;
+}
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .landing {
+    min-height: auto;
+    padding-bottom: 40px;
+  }
+
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .landing-content {
+    margin: 80px auto 40px;
+    padding: 0 25px;
+    text-align: center;
+  }
+
+  .landing-content h1 {
+    font-size: 3.8rem;
+  }
+
+  .description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-card {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    margin: 40px auto 0;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(92, 127, 184, 0.2);
+    padding-bottom: 12px;
+  }
+
+  .contact-item:last-child {
+    border-bottom: none;
+  }
+}
+

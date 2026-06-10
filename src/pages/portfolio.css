@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --blue-dark: #203864;
+  --pink: #e86fa3;
+  --pink-light: #f8c8dc;
+  --sky: #edf6ff;
+  --text: #34425c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:
+    linear-gradient(rgba(255,255,255,.85), rgba(255,245,250,.95)),
+    url("../assets/img/Adriana.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+}
+
+.navbar {
+  width: 88%;
+  margin: 28px auto 0;
+  padding: 24px 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.30);
+  border-radius: 28px;
+
+  box-shadow: 0 8px 32px rgba(31,38,135,0.10);
+}
+
+.logo {
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #203864;
+}
+
+.nav-links {
+  display: flex;
+  gap: 34px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0f2444;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.nav-links a.active {
+  color: #e86fa3;
+  border-bottom: 3px solid #e86fa3;
+}
+
+.nav-links a:hover {
+  color: #e86fa3;
+}
+
+/* CONTENEDOR GENERAL */
+.portfolio-section {
+  width: 90%;
+  padding: 50px 0;
+   margin: 50px auto 80px;
+}
+
+/* TÍTULO */
+.portfolio-section h1 {
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-size: 5rem;
+  color: var(--blue-dark);
+  margin-bottom: 60px;
+}
+
+/* GRID */
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px;
+}
+
+/* CARD */
+.project-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+  overflow: hidden;
+
+  box-shadow: 0 20px 45px rgba(32, 56, 100, 0.16);
+  transition: all .35s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 28px 55px rgba(232, 111, 163, 0.25);
+}
+
+/* IMAGEN */
+.project-card img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* INFO */
+.project-info {
+  padding: 32px;
+}
+
+.project-info h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 2.2rem;
+  color: var(--blue-dark);
+  margin-bottom: 12px;
+}
+
+.project-info p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+/* TECNOLOGÍAS */
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.tech-container span {
+  background: var(--pink-light);
+  color: var(--blue-dark);
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+/* BOTONES */
+.project-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  text-decoration: none;
+  background: var(--pink);
+  color: white;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: all .3s ease;
+}
+
+.project-links a:hover {
+  background: var(--blue-dark);
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  #projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-section h1 {
+    font-size: 3.8rem;
+  }
+
+  .project-card img {
+    height: 240px;
+  }
+}
