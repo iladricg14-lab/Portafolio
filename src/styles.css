@@ -9,6 +9,10 @@
   --text: #26344d;
 }
 
+.body{
+    background:red !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -260,11 +264,6 @@ body {
   border-right: none;
 }
 
-/*.contact-item span {
-  color: var(--pink);
-  font-weight: 700;
-  font-size: 1.1rem;
-}*/
 
 .contact-item span {
     color: #e86fa3;
