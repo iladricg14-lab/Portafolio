@@ -16,7 +16,7 @@
 
 body {
   background:
-    linear-gradient(rgba(255,255,255,.85), rgba(255,245,250,.95)),
+    linear-gradient(rgba(255,255,255,.55), rgba(255,245,250,.65)),
     url("../assets/img/Adriana.png");
   background-size: cover;
   background-position: center;
@@ -29,15 +29,12 @@ body {
   width: 88%;
   margin: 28px auto 0;
   padding: 24px 50px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   background: rgba(255,255,255,0.45);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-
   border: 1px solid rgba(255,255,255,0.30);
   border-radius: 28px;
 
@@ -74,6 +71,12 @@ body {
   color: #e86fa3;
 }
 
+.navbar,
+.portfolio-section {
+  position: relative;
+  z-index: 5;
+}
+
 /* CONTENEDOR GENERAL */
 .portfolio-section {
   width: 90%;
@@ -88,6 +91,17 @@ body {
   font-size: 5rem;
   color: var(--blue-dark);
   margin-bottom: 60px;
+}
+
+/*Subtitulo*/
+
+.portfolio-subtitle {
+  text-align: center;
+  max-width: 650px;
+  margin: -40px auto 60px;
+  font-size: 1.1rem;
+  color: #526174;
+  line-height: 1.6;
 }
 
 /* GRID */
@@ -143,6 +157,17 @@ body {
   margin-bottom: 22px;
 }
 
+.project-type {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 7px 16px;
+  border-radius: 20px;
+  background: rgba(232, 111, 163, 0.15);
+  color: #e86fa3;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
 /* TECNOLOGÍAS */
 .tech-container {
   display: flex;
@@ -181,6 +206,82 @@ body {
   background: var(--blue-dark);
   transform: translateY(-3px);
 }
+
+/*Decoracion*/
+
+.clouds {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.cloud {
+  position: absolute;
+  width: 220px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 50px;
+  filter: blur(.5px);
+  animation: moveClouds linear infinite;
+  box-shadow: 0 8px 25px rgba(92, 127, 184, 0.12);
+}
+
+.cloud::before,
+.cloud::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+}
+
+.cloud::before {
+  width: 95px;
+  height: 95px;
+  top: -40px;
+  left: 30px;
+}
+
+.cloud::after {
+  width: 120px;
+  height: 120px;
+  top: -58px;
+  right: 28px;
+}
+
+.cloud-1 {
+  top: 16%;
+  left: -250px;
+  animation-duration: 35s;
+}
+
+.cloud-2 {
+  top: 38%;
+  left: -280px;
+  transform: scale(0.75);
+  animation-duration: 48s;
+  animation-delay: 4s;
+}
+
+.cloud-3 {
+  top: 68%;
+  left: -320px;
+  transform: scale(1.1);
+  animation-duration: 60s;
+  animation-delay: 8s;
+}
+
+@keyframes moveClouds {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(140vw);
+  }
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {

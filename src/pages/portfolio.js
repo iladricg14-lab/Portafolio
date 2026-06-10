@@ -12,6 +12,7 @@ function renderProjects(projects) {
       <article class="project-card">
         <img src="${project.image}" alt="${project.title}" class="project-img">
         <div class="project-info">
+        <span class="project-type">Proyecto web</span>
           <h2>${project.title}</h2>
           <p>${project.description}</p>
           <div class="tech-container">
