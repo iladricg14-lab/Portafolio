@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Mundo Entre Libros",
+    "badge": "Proyecto Integrador",
+    "description": "Plataforma web enfocada en la venta de libros y la creación de una comunidad lectora mediante catálogo, foros e interacción entre usuarios.",
+    "problem": "Muchas librerías digitales se enfocan únicamente en la compra, dejando de lado la experiencia social de la lectura.",
+    "solution": "Diseñamos una plataforma que combina e-commerce, comunidad lectora, recomendaciones y navegación accesible.",
+    "image": "/src/assets/img/projects/Mundo_Entre_Libros.png",
+    "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "JSON"],
+    "github": "#",
+    "demo": "#"
+  },
+  {
+    "id": 2,
+    "title": "World Cup Store",
+    "badge": "Hackatón",
+    "description": "E-commerce desarrollado durante un hackatón para la venta de artículos relacionados con la Copa Mundial.",
+    "problem": "El reto consistía en construir una tienda funcional en poco tiempo, con catálogo y carrito de compras.",
+    "solution": "Implementé funcionalidades de carrito con JavaScript y LocalStorage para conservar productos agregados por el usuario.",
+    "image": "/src/assets/img/projects/Word_Cup_Store.png",
+    "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "LocalStorage"],
+    "github": "#",
+    "demo": "#"
+  }
+]

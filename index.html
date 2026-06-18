@@ -1,92 +1,337 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Tipografías -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./src/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ilse Adriana | Portafolio</title>
-</head>
-<body>
-  <main class="landing">
+  </head>
 
-    <nav class="navbar">
-      <div class="logo">Ilse Adriana</div>
+  <body>
+    <!-- Animacion petalos-->
 
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Inicio</a></li>
-        <li><a href="portfolio.html">Portafolio</a></li>
-        <li><a href="aboutMe.html">Acerca de mí</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="petals-container">
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+      <span class="petal"></span>
+    </div>
 
-    <section class="landing-content">
-      <p class="hello">Hola, soy</p>
+    <main class="page-wrapper">
+      <!-- HERO / INICIO -->
 
-      <h1>Ilse Adriana</h1>
+      <section id="inicio" class="hero-section">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg hero-navbar">
+          <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand logo" href="#inicio"> Ilse Adriana </a>
 
-      <h2>Desarrolladora Web</h2>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarPortfolio"
+              aria-controls="navbarPortfolio"
+              aria-expanded="false"
+              aria-label="Menú de navegación"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <p class="description">
-        Creo experiencias web funcionales, accesibles y centradas en las personas.
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarPortfolio"
+            >
+              <ul class="navbar-nav gap-lg-4">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#inicio">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#portafolio">Portafolio</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#acerca">Acerca de mí</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#cv">CV</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- CONTENIDO HERO -->
+        <div class="hero-content">
+          <p class="hero-greeting">Hola, soy</p>
+
+          <h1>Ilse Adriana</h1>
+
+          <h2>Desarrolladora Java Full Stack</h2>
+
+          <p class="hero-description">
+            Creo experiencias web funcionales, accesibles y centradas en las
+            personas.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#portafolio" class="btn btn-primary-custom">
+              Ver mis proyectos
+              <i class="bi bi-arrow-right"></i>
+            </a>
+
+            <a href="#contacto" class="btn btn-outline-custom">
+              Contáctame
+              <i class="bi bi-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTAFOLIO -->
+      <section id="portafolio" class="section-container">
+        <div class="container">
+          <div class="portfolio-intro">
+            <span>🌸 Portafolio</span>
+
+            <h2>Construyendo soluciones digitales con propósito</h2>
+
+            <p>
+              Mi transición de Planeación Territorial al Desarrollo Java Full
+              Stack me ha permitido combinar análisis, organización y tecnología
+              para crear experiencias digitales funcionales y centradas en las
+              personas.
+            </p>
+          </div>
+          <div id="projects-container" class="row g-4"></div>
+        </div>
+      </section>
+
+      <!-- ACERCA DE MÍ -->
+      <section id="acerca" class="section-container">
+        <div class="container">
+          <div class="section-title text-center about-title">
+            <span>🌸 Acerca de mí</span>
+            <h2>Construyendo experiencias digitales con propósito</h2>
+          </div>
+          <div class="about-layout">
+            <!-- Imagen -->
+
+            <div class="about-image">
+              <img
+                src="/src/assets/img/profile/IlAdriana.png"
+                alt="Ilse Adriana"
+              />
+            </div>
+
+            <!-- Contenido -->
+
+            <div class="about-card about-card-text">
+              <p>
+                Soy <strong>Ilse Adriana</strong>, desarrolladora Java Full
+                Stack en formación, apasionada por crear experiencias digitales
+                funcionales, accesibles y visualmente atractivas.
+              </p>
+              <p>
+                Actualmente continúo fortaleciendo mis conocimientos en
+                desarrollo frontend y backend mediante proyectos colaborativos,
+                donde aplico tecnologías como Java, JavaScript, Spring Boot,
+                Bootstrap y bases de datos para construir soluciones digitales
+                modernas.
+              </p>
+              <p>
+                Me motiva transformar ideas en aplicaciones útiles, aprender
+                constantemente nuevas tecnologías y enfrentar desafíos que
+                impulsen mi crecimiento profesional dentro del desarrollo de
+                software.
+              </p>
+              <p>
+                Disfruto trabajar en equipo, colaborar en proyectos innovadores
+                y combinar creatividad, organización y tecnología para ofrecer
+                experiencias que generen valor para las personas.
+              </p>
+
+              <!-- Mini tarjetas -->
+
+              <div class="about-mini-grid">
+                <div class="about-mini-card">
+                  <span>Actualmente</span>
+                  <strong>Java Full Stack Developer Jr.</strong>
+                </div>
+
+                <div class="about-mini-card">
+                  <span>Me apasiona</span>
+                  <strong>Crear experiencias web</strong>
+                </div>
+
+                <div class="about-mini-card">
+                  <span>Siempre aprendiendo</span>
+                  <strong>Nuevas tecnologías</strong>
+                </div>
+              </div>
+
+              <!-- Tecnologías -->
+
+              <div class="about-tags">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>MySQL</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-extra">
+          <h3>Más allá del código</h3>
+          <div class="about-extra-grid">
+            <div>
+              <i class="bi bi-cup-hot"></i>
+              <span>Café y tardes creativas</span>
+            </div>
+
+            <div>
+              <i class="bi bi-music-note-beamed"></i>
+              <span>Música para concentrarme</span>
+            </div>
+
+            <div>
+              <i class="bi bi-book"></i>
+              <span>Lectura e inspiración visual</span>
+            </div>
+
+            <div>
+              <i class="bi bi-stars"></i>
+              <span>Aprendizaje constante</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIMELINE -->
+<section id="timeline" class="section-container">
+  <div class="container">
+
+    <div class="section-title text-center timeline-title">
+      <span>🌸 Mi camino en desarrollo</span>
+      <h2>Aprender, construir y seguir creciendo</h2>
+      <p>
+        Cada proyecto ha sido una oportunidad para fortalecer mis habilidades,
+        aprender nuevas tecnologías y acercarme a mi objetivo como desarrolladora Full Stack.
       </p>
+    </div>
 
-      <div class="buttons">
-        <a href="portfolio.html" class="btn-primary">Ver mis proyectos →</a>
-        <a href="contact.html" class="btn-secondary">Contáctame ✉</a>
-      </div>
-    </section>
+    <div class="timeline-wrapper">
 
-    <section class="contact-card">
-      <div class="contact-item">
-        <span>✉</span>
-        <div>
-          <h3>Email</h3>
-          <p>adriana.careog@gmail.com</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span>2026 · Actualidad</span>
+          <h3>Desarrolladora Java Full Stack</h3>
+          <p>Formación enfocada en desarrollo frontend, backend, bases de datos y trabajo colaborativo.</p>
         </div>
       </div>
 
-      <div class="contact-item">
-        <span>☎</span>
-        <div>
-          <h3>Teléfono</h3>
-          <p>+52 722 666 0270</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span>2026</span>
+          <h3>World Cup Store</h3>
+          <p>E-commerce desarrollado en hackatón, implementando carrito de compras con JavaScript y LocalStorage.</p>
         </div>
       </div>
 
-      <div class="contact-item">
-        <span>⌖</span>
-        <div>
-          <h3>Ubicación</h3>
-          <p>México</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span>2026</span>
+          <h3>Mundo Entre Libros</h3>
+          <p>Proyecto integrador de librería digital con catálogo, carrito, foros y renderizado dinámico.</p>
         </div>
       </div>
 
-      <div class="contact-item">
-        <span>⌘</span>
-        <div>
-          <h3>GitHub</h3>
-          <p>github.com/iladricg14-lab</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span>2025</span>
+          <h3>Primeros proyectos web</h3>
+          <p>Práctica con HTML, CSS, JavaScript, Bootstrap, GitHub y diseño responsive.</p>
         </div>
       </div>
 
-      <div class="contact-item">
-        <span>in</span>
-        <div>
-          <h3>LinkedIn</h3>
-          <p>linkedin.com/in/ilse-adriana-careo-galicia/</p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span>Base profesional</span>
+          <h3>Resolución de problemas y organización</h3>
+          <p>Experiencia previa fortaleciendo habilidades de análisis, estructura, documentación y trabajo por objetivos.</p>
         </div>
       </div>
-    </section>
 
-  </main>
-</body>
+    </div>
+
+  </div>
+</section>
+
+      <!-- BLOG -->
+      <section id="blog" class="section-container">
+        <div class="container">
+          <div class="section-title text-center">
+            <span>Reflexiones</span>
+            <h2>Blog</h2>
+            <p>Aprendizajes, experiencias y temas que me inspiran.</p>
+          </div>
+
+          <div id="blog-container" class="row g-4"></div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="section-container">
+        <div class="container">
+          <div class="section-title text-center">
+            <span>Hablemos</span>
+            <h2>Contacto</h2>
+          </div>
+
+          <div class="contact-card">
+            <a href="mailto:iseadriana@gmail.com">
+              <i class="bi bi-envelope"></i>
+              iseadriana@gmail.com
+            </a>
+
+            <a href="#" target="_blank">
+              <i class="bi bi-github"></i>
+              GitHub
+            </a>
+
+            <a href="#" target="_blank">
+              <i class="bi bi-linkedin"></i>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
 </html>
