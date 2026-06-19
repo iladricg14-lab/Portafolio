@@ -6,10 +6,10 @@
     "description": "Plataforma web enfocada en la venta de libros y la creación de una comunidad lectora mediante catálogo, foros e interacción entre usuarios.",
     "problem": "Muchas librerías digitales se enfocan únicamente en la compra, dejando de lado la experiencia social de la lectura.",
     "solution": "Diseñamos una plataforma que combina e-commerce, comunidad lectora, recomendaciones y navegación accesible.",
-    "image": "/src/assets/img/projects/Mundo_Entre_Libros.png",
+    "image": "/src/assets/img/projects/mundoentrelibros.png",
     "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "JSON"],
-    "github": "#",
-    "demo": "#"
+    "github": "https://github.com/iladricg14-lab/ecommerce-libreria",
+    "demo": "https://mundo-entre-libros-personal.vercel.app/"
   },
   {
     "id": 2,
@@ -20,7 +20,7 @@
     "solution": "Implementé funcionalidades de carrito con JavaScript y LocalStorage para conservar productos agregados por el usuario.",
     "image": "/src/assets/img/projects/Word_Cup_Store.png",
     "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "LocalStorage"],
-    "github": "#",
-    "demo": "#"
+    "github": "https://github.com/iladricg14-lab/world-cup-store",
+    "demo": "https://world-cup-store-two.vercel.app/"
   }
 ]
