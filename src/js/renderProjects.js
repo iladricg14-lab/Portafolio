@@ -1,16 +1,25 @@
 import projects from "../data/projects.json";
 
+import project1Img from "../assets/projects/project1.png";
+import project2Img from "../assets/projects/project2.png";
+
+const projectImages = {
+  project1: project1Img,
+  project2: project2Img,
+};
+
 const container = document.querySelector("#projects-container");
 
 if (container) {
   container.innerHTML = projects
     .map((project, index) => {
       const reverseClass = index % 2 !== 0 ? "project-case-reverse" : "";
+      const imageSrc = projectImages[project.imageKey];
 
       return `
         <article class="project-case ${reverseClass}">
           <div class="project-image">
-            <img src="${project.image}" alt="Captura del proyecto ${project.title}">
+            <img src="${imageSrc}" alt="Captura del proyecto ${project.title}">
           </div>
 
           <div class="project-info">

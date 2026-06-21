@@ -6,7 +6,8 @@
     "description": "Plataforma web enfocada en la venta de libros y la creación de una comunidad lectora mediante catálogo, foros e interacción entre usuarios.",
     "problem": "Muchas librerías digitales se enfocan únicamente en la compra, dejando de lado la experiencia social de la lectura.",
     "solution": "Diseñamos una plataforma que combina e-commerce, comunidad lectora, recomendaciones y navegación accesible.",
-    "image": "./src/assets/projects/project1.png",
+    "image": "/src/assets/projects/project1.png",
+    "imageKey": "project1",
     "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "JSON"],
     "github": "https://github.com/iladricg14-lab/ecommerce-libreria",
     "demo": "https://mundo-entre-libros-personal.vercel.app/"
@@ -18,7 +19,8 @@
     "description": "E-commerce desarrollado durante un hackatón para la venta de artículos relacionados con la Copa Mundial.",
     "problem": "El reto consistía en construir una tienda funcional en poco tiempo, con catálogo y carrito de compras.",
     "solution": "Implementé funcionalidades de carrito con JavaScript y LocalStorage para conservar productos agregados por el usuario.",
-    "image": "./src/assets/projects/project2.png",
+    "image": "/src/assets/projects/project2.png",
+    "imageKey": "project2",
     "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "LocalStorage"],
     "github": "https://github.com/iladricg14-lab/world-cup-store",
     "demo": "https://world-cup-store-two.vercel.app/"
