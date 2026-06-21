@@ -1613,16 +1613,16 @@ html{
 ========================= */
 
 .footer {
-  padding: 110px 20px 50px;
+  padding: 40px 20px;
 }
 
 .footer-card {
   width: min(96%, 1500px);
   margin: 0 auto;
-  padding: 55px;
+  padding: 30px 40px;
   display: grid;
   grid-template-columns: 1.3fr 0.7fr 0.7fr;
-  gap: 50px;
+  gap: 30px;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -1638,9 +1638,18 @@ html{
     inset 0 1px 0 rgba(255,255,255,.8);
 }
 
+.footer-brand {
+height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .footer-brand span {
   display: block;
   font-family: "Cormorant Garamond", serif;
+  justify-content: center;
   font-size: clamp(2.4rem, 4vw, 3.6rem);
   font-weight: 700;
   color: var(--color-primary);
@@ -1648,9 +1657,10 @@ html{
 }
 
 .footer-brand p {
-  max-width: 430px;
-  margin: 0;
-  line-height: 1.8;
+   margin: 15px auto 0;
+  max-width: 520px;
+  line-height: 1.6;
+  font-size: 1rem;
   color: var(--color-text);
 }
 
