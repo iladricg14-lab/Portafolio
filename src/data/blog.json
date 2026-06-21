@@ -4,21 +4,24 @@
     "id": 1,
     "tag": "Desarrollo Web",
     "title": "Mi transición al desarrollo de software",
-    "description": "Una reflexión sobre cómo descubrí mi interés por la programación y comencé a construir mi camino como desarrolladora Java Full Stack.",
-    "date": "Junio 2026"
+    "description": "Una reflexión sobre cómo descubrí mi interés por la programación.",
+    "date": "Junio 2026",
+    "content": "Durante mi formación y experiencia profesional descubrí que disfrutaba mucho trabajar con herramientas digitales, bases de datos y procesos relacionados con la información. Eso despertó mi interés por el desarrollo de software y me llevó a explorar la programación. Con el tiempo, encontré en el desarrollo web una forma de combinar análisis, creatividad y tecnología para construir soluciones útiles y funcionales."
   },
   {
     "id": 2,
     "tag": "Proyecto",
     "title": "World Cup Store: aprendizajes de un hackatón",
-    "description": "Retos, trabajo en equipo y aprendizajes técnicos al construir una tienda web con carrito de compras y LocalStorage.",
-    "date": "Junio 2026"
+    "description": "Retos y aprendizajes técnicos al construir una tienda web.",
+    "date": "Junio 2026",
+    "content": "World Cup Store fue un proyecto desarrollado durante un hackatón, donde trabajamos en equipo para construir una tienda web funcional. Uno de los aprendizajes más importantes fue implementar el carrito de compras con JavaScript y LocalStorage, cuidando que los productos se agregaran, eliminaran y conservaran correctamente. Este proyecto fortaleció mi lógica, organización y capacidad de resolver problemas bajo presión."
   },
   {
     "id": 3,
     "tag": "Portafolio",
     "title": "Construyendo mi portafolio desde cero",
-    "description": "Decisiones de diseño, estructura, tecnologías y aprendizajes al crear mi primer portafolio profesional.",
-    "date": "Junio 2026"
+    "description": "Diseño, estructura y aprendizajes al crear mi primer portafolio profesional.",
+    "date": "Junio 2026",
+    "content": "Crear este portafolio me permitió aplicar conocimientos de HTML, CSS, JavaScript, Bootstrap y diseño responsive. Más allá de mostrar proyectos, quise construir una experiencia visual que reflejara mi personalidad y mi camino como desarrolladora. Cada sección fue una oportunidad para practicar estructura, estilos, animaciones, renderizado dinámico y organización del contenido."
   }
 ]
