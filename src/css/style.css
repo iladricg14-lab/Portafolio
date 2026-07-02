@@ -215,7 +215,7 @@ a {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("/src/assets/img/backgrounds/heroAdriana.png");
+    background-image: url("/src/assets/img/backgrounds/heroPortfolio.png");
     background-size: cover;
     background-position: center;
     z-index: 0;
